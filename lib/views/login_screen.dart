@@ -22,14 +22,14 @@ class _LoginScreenState extends State<LoginScreen> {
         centerTitle: true,
       ),
       */
-      body: Container(
+      body: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Stack(
           children: [
             Positioned(
               bottom: 130,
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: FittedBox(
                   fit: BoxFit.fill,
@@ -39,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Positioned(
               top: 0,
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: FittedBox(
                   fit: BoxFit.fill,
@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Positioned(
               top: 0,
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 //alignment: Alignment.topCenter,
                 child: Column(
@@ -126,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         const SizedBox(width: 10,),
                         CustomTextButton(
                           buttonText: 'Sign Up',
-                          buttonColor: Color.fromARGB(255, 26, 37, 190),
+                          buttonColor: const Color.fromARGB(255, 26, 37, 190),
                           onPress: () { print('Sign Up Pressed'); },
                         ),
                       ],
